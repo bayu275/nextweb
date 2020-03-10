@@ -3,7 +3,7 @@ import imgBtn from '../static/images/paper-plane.svg';
 
 const about = () => (
   <div className="about">
-      <h2>ABOUT</h2>
+      <h2>ABOUTt</h2>
       <div className="container">
           <span>
               <p>Hi, saya <em>Bayu Dirgantara</em>, FullStack Web Developer - Pekanbaru</p>
