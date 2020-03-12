@@ -1,17 +1,37 @@
+import { useRef } from "react";
 
 
 const Form = () => {
+    const fullname = useRef('');       
+    const email = useRef('');
+    const textarea = useRef('');
+    const button = useRef('')
+    const handlePress = (e) => {
+        if(e.key === 'Enter'){
+            if(e.target == fullname.current){
+                console.log('sama')
+            }else {
+                console.log('tdk')
+            }
+        } 
+    }
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        alert('hi');
+    }
+
     return (
     <div className="interested">
         <p>Are you interested with me, and want to collaborate on a project ?</p>
         <form action="">
             <p>CONTACT US</p>
-                <input type="text" placeholder="Fullname"/>
-                <input type="text" placeholder="Your Email"/>
-                <textarea name="" id="" placeholder="Your Message">
+                <input ref={fullname} type="text" placeholder="Fullname" onKeyPress={handlePress}/>
+                <input ref={email} type="text" placeholder="Your Email" onKeyPress={handlePress}/>
+                <textarea ref={textarea} name="" id="" placeholder="Your Message" onKeyPress={handlePress}>
     
                 </textarea>
-            <button>SEND EMAIL</button>
+            <button onClick={handleClick}>SEND EMAIL</button>
         </form>
         <style jsx>{`
             .interested {
@@ -53,8 +73,8 @@ const Form = () => {
                 outline: none;
             }
             textarea {
-                padding-top: 1rem;
-                resize: vertical;
+                padding-top: 1rem; 
+                resize: vertical;    
             }
             form p , input , textarea , button {
                 margin-bottom: 1rem;
@@ -73,4 +93,4 @@ const Form = () => {
         `}</style>
     </div>
 )}
-export default Form;
+export default Form; 

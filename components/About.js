@@ -1,9 +1,9 @@
-import img from '../static/images/ABOUT.png';
-import imgBtn from '../static/images/paper-plane.svg';
+import img from '../public/static/ABOUT.png';
+import imgBtn from '../public/static/paper-plane.svg';
 
 const about = () => (
   <div className="about">
-      <h2>ABOUTt</h2>
+      <h2>ABOUT</h2>
       <div className="container">
           <span>
               <p>Hi, saya <em>Bayu Dirgantara</em>, FullStack Web Developer - Pekanbaru</p>

@@ -1,8 +1,8 @@
-import footerImg from '../static/images/FOOTER.png';
-import twImg from '../static/images/twiiter.svg'
-import fbImg from '../static/images/facebook.svg'
-import igImg from '../static/images/instagram.svg'
-import gitImg from '../static/images/github.svg'
+import footerImg from '../public/static/FOOTER.png';
+import twImg from '../public/static/twiiter.svg'
+import fbImg from '../public/static/facebook.svg'
+import igImg from '../public/static/instagram.svg'
+import gitImg from '../public/static/github.svg'
 
 const footer = () => {
     return (

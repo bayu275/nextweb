@@ -1,15 +1,11 @@
-import portofolio from '../static/images/Porto';
-import Gallery from '../components/Gallery';
-import { useRef, useEffect, useState, createRef } from 'react';
+import { useState } from 'react';
 
-export default function Recent(){
-    let data = portofolio.portofolio;
+const recent = (props) => {
+    const {gambar} = props.data
     const [isStatus,setIsStatus] = useState(false);
-    const figure = useRef(this)
-
+    
     function updateUI(e){
         e.preventDefault();
-        console.log(e)
         if(e.type === 'mouseenter'){
             setIsStatus(true)
         }else if(e.type === 'mouseleave'){
@@ -18,33 +14,65 @@ export default function Recent(){
     }
 
     return (
-        <div className="recent">
-          <h2>RECENT WORKS</h2>
-          <section >
-            {data.map((item,index) => (
-                <Gallery data={item} key={index}/>
-            ))}
-        </section>
-      <style jsx>{`
-      .recent {
-          padding: 0 4rem;
-          margin-top: 3.5rem
-          
-      }
-        section {
-            margin-top: 3rem;
-            display: grid;
-            grid-template-columns: repeat(3,auto);
-            grid-gap: 2rem;
-            justify-content: center;
-            box-sizing: border-box;
-        }
-        h2{
-            text-align: center;
-            font-family: 'Alice',serif;
-            margin: 0;
-        }
-      `}</style>
-      </div>
+        <figure>
+            <img src={gambar} alt={gambar} onMouseEnter={updateUI} onMouseLeave={updateUI}/> 
+            {isStatus == false ? null : <div className="show" onMouseEnter={updateUI} onMouseLeave={updateUI}><p>Live Preview</p></div>} 
+            {isStatus == false ? null :  <div className="title" onMouseEnter={updateUI} onMouseLeave={updateUI}><p>Membuat Website Dinamis</p></div>}
+        <style jsx>{`
+            figure {
+                margin: 0;
+                height: auto;
+                width: auto;
+                box-sizing: border-box;
+                position: relative; 
+                float: left;
+            }
+            figure img {
+                width: 22rem;
+                height: 13rem;
+                border-radius: 10px;
+                display: block;
+                margin: auto;
+            }
+            figure .show p , figure .title p  {
+                color: #fff;
+                text-align: center;
+            }
+            .show {
+                width: 100%;
+                position: absolute;
+                top: 0.1px;
+                background-color: rgba(0, 0, 0, .8);
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                animation: top 1.2s;   
+                
+            }
+            .title {
+                width: 100%;
+                position: absolute;
+                bottom: 0.1px;
+                background-color: rgba(0, 0, 0, .8);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                display: block;
+                animation: bottom 0.8s;
+            }
+            @keyframes bottom {
+                0%{
+                    bottom: 50px;
+                }
+            }
+
+            @keyframes top {
+                0%{
+                    top: 50px;
+                }
+            }
+
+        `}</style>
+        </figure>
     )
 }
+
+export default recent; 

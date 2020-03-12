@@ -1,9 +1,9 @@
-import htmlimg from '../static/images/HTML.png';
-import cssimg from '../static/images/CSS.png';
-import jsimg from '../static/images/JAVASCRIPT.png';
-import nodeimg from '../static/images/NODE.png';
-import reactimg from '../static/images/REACT.png';
-import bootimg from '../static/images/BOOTSTRAP.png'
+import htmlimg from '../public/static/HTML.png';
+import cssimg from '../public/static/CSS.png';
+import jsimg from '../public/static/JAVASCRIPT.png';
+import nodeimg from '../public/static/NODE.png';
+import reactimg from '../public/static/REACT.png';
+import bootimg from '../public/static/BOOTSTRAP.png'
 
 export default function Skills(){
     return (

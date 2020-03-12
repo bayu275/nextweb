@@ -3,13 +3,13 @@ import Jumbotron from '../components/Jumbotron';
 import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Skills from '../components/Skills';
-import Recent from '../components/Recent';
+import Recents from '../components/Recents';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
 import { Router, useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-
+ 
 export default function Index() {
   const router = useRouter();
   return (
@@ -21,7 +21,7 @@ export default function Index() {
       <Navbar/>
       <About />
       <Skills/>
-      <Recent />
+      <Recents />
       <Form />
       <Footer/>
       <style jsx global>{`

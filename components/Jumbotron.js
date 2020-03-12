@@ -1,5 +1,5 @@
-import jumbotron from '../static/images/JUMBOTRON.png'
-import myimage from '../static/images/SAYA.jpg'
+import jumbotron from '../public/static/JUMBOTRON.png'
+import myimage from '../public/static/SAYA.jpg'
 
 export default function Jumbotron(){
     return (
