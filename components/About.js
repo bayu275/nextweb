@@ -3,7 +3,11 @@ import imgBtn from '../public/static/paper-plane.svg';
 
 const about = () => (
   <div className="about">
+<<<<<<< HEAD
       <h2>ABOUTtt!!! Bayu  Setiawan</h2>
+=======
+      <h2>ABOUTtt!!! Bayu dirgantara development</h2>
+>>>>>>> b3f4fdc1a6de398b29ec1f875c9bc7928f368ad7
       <div className="container">
           <span>
               <p>Hi, saya <em>Bayu Dirgantara</em>, FullStack Web Developer - Pekanbaru</p>
