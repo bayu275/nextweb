@@ -2,22 +2,16 @@ import { useState } from 'react';
 
 const recent = (props) => {
     const {gambar} = props.data
+    console.log(props)
     const [isStatus,setIsStatus] = useState(false);
-    
-    function updateUI(e){
-        e.preventDefault();
-        if(e.type === 'mouseenter'){
-            setIsStatus(true)
-        }else if(e.type === 'mouseleave'){
-            setIsStatus(false)
-        }
-    }
-
+//     onMouseEnter={updateUI} onMouseLeave={updateUI}
+// onMouseEnter={updateUI} onMouseLeave={updateUI}
+// onMouseEnter={updateUI} onMouseLeave={updateUI}
     return (
         <figure>
-            <img src={gambar} alt={gambar} onMouseEnter={updateUI} onMouseLeave={updateUI}/> 
-            {isStatus == false ? null : <div className="show" onMouseEnter={updateUI} onMouseLeave={updateUI}><p>Live Preview</p></div>} 
-            {isStatus == false ? null :  <div className="title" onMouseEnter={updateUI} onMouseLeave={updateUI}><p>Membuat Website Dinamis</p></div>}
+            <img src={gambar} alt={gambar} /> 
+            {isStatus == false ? null : <div className="show" ><p>Live Preview</p></div>} 
+            {isStatus == false ? null :  <div className="title" ><p>Membuat Website Dinamis</p></div>}
         <style jsx>{`
             figure {
                 margin: 0;
