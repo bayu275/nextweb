@@ -3,8 +3,7 @@ import Recent from '../components/Recent';
 
 export default function Recents(){
     const data = portofolio.portofolio;
-    console.log(data)
-
+    
     return (
         <div className="recent">
           <h2>RECENT WORKS</h2>
