@@ -2,7 +2,7 @@ import img from '../public/static/ABOUT.png';
 import imgBtn from '../public/static/paper-plane.svg';
 
 const about = () => (
-  <div className="about">
+  <div className="about container-fluid">
       <h2>ABOUT</h2>
       <div className="container">
           <span>

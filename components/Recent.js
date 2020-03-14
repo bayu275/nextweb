@@ -1,18 +1,56 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const recent = (props) => {
     const {gambar} = props.data
-    console.log(props)
     const [isStatus,setIsStatus] = useState(false);
-//     onMouseEnter={updateUI} onMouseLeave={updateUI}
-// onMouseEnter={updateUI} onMouseLeave={updateUI}
-// onMouseEnter={updateUI} onMouseLeave={updateUI}
+    const latar = useRef('');
+     
+    function updateUI(e){
+        e.preventDefault();
+        if(e.type === 'mouseenter'){
+            setIsStatus(true)
+        }else if(e.type === 'mouseleave'){
+            setIsStatus(false)
+        }
+    }
+
     return (
-        <figure>
-            <img src={gambar} alt={gambar} /> 
-            {isStatus == false ? null : <div className="show" ><p>Live Preview</p></div>} 
-            {isStatus == false ? null :  <div className="title" ><p>Membuat Website Dinamis</p></div>}
+        <figure >
+            <img src={gambar} alt={gambar} onMouseEnter={updateUI} onMouseLeave={updateUI}/> 
+            <div ref={latar} className="latar" onMouseEnter={updateUI} onMouseLeave={updateUI}><img src={require('../public/static/click.svg')} alt={require('../public/static/click.svg')}/></div>  
+            {/* {isStatus == false ? null : <div className="latar"><img src={require('../public/static/click.svg')} alt={require('../public/static/click.svg')} onMouseEnter={updateUI} onMouseLeave={updateUI}/></div>}  */}
+            {/* {isStatus == false ? null : <div className="show" onMouseEnter={updateUI} onMouseLeave={updateUI}><a href="https://moviesdirgantara.netlify.com" target="_blank" rel="noopener noreferrer"><p>Live Preview</p></a></div>}  */}
+            {/* {isStatus == false ? null :  <div className="title" onMouseEnter={updateUI} onMouseLeave={updateUI}><Link href="/portofolio"><a><p>Membuat Website Dinamis</p></a></Link></div>} */}
         <style jsx>{`
+            .latar {
+                width: 22rem;
+                height: 13rem;
+                position: absolute;
+                top: 0;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, .8);
+                display: ${isStatus == false ? `none` : `flex`}; 
+                animation : detail 0.5s ease;
+            }
+
+            @keyframes detail {
+                from {
+                    width: 0;
+                    left: 100%;
+                }
+                to {
+                    left: 0;
+                    width: 22rem;
+                }
+
+            }
+
+            .latar img {
+                align-self: center;
+                width: 50px;
+                height: 50px;
+            }
             figure {
                 margin: 0;
                 height: auto;
@@ -28,9 +66,13 @@ const recent = (props) => {
                 display: block;
                 margin: auto;
             }
-            figure .show p , figure .title p  {
+            figure .show a , figure .title a  {
                 color: #fff;
+                text-decoration: none;
                 text-align: center;
+            }
+            figure .show  a , figure .title a :hover { 
+                font-weight: bold;
             }
             .show {
                 width: 100%;
@@ -51,17 +93,6 @@ const recent = (props) => {
                 border-bottom-right-radius: 10px;
                 display: block;
                 animation: bottom 0.8s;
-            }
-            @keyframes bottom {
-                0%{
-                    bottom: 50px;
-                }
-            }
-
-            @keyframes top {
-                0%{
-                    top: 50px;
-                }
             }
 
         `}</style>

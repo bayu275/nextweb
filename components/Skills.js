@@ -59,6 +59,7 @@ export default function Skills(){
                 width: 15rem;
                 border-radius: 1rem;
                 box-shadow: 0px 5px 10px -1px #ccc;
+                padding: 5px 10px;
             }
             figure :hover {
                 background-color: #eeeeee;
@@ -68,12 +69,13 @@ export default function Skills(){
                 width: 40px;
                 height: 40px;
                 align-self: center;
-                padding: 0 15px  0 15px;
+                margin-right: 10px;
             }
             figure > h2 {
                 font-size: 1.2rem;
                 font-family: 'Alice',serif;
                 font-weight: 200;
+                align-self: center;
             }
           `}</style>
       </div>

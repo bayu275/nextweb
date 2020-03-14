@@ -4,52 +4,66 @@ import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Recents from '../components/Recents';
-import Form from '../components/Form';
-import Footer from '../components/Footer';
-import { Router, useRouter } from 'next/router';
-import { useEffect } from 'react';
+import Layout from '../components/Layout';
 
  
 export default function Index() {
-  const router = useRouter();
   return (
-    <React.Fragment>
+    <Layout>
       <Head>
         <title>Bayu Dirgantara</title>
       </Head>
       <Jumbotron/>
       <Navbar/>
-      <About />
+      <About/>
       <Skills/>
-      <Recents />
-      <Form />
-      <Footer/>
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,300&display=swap');
-        * {
-          font-family: 'Open Sans', sans-serif,'Alice', serif,'Lato', sans-serif;
-        }
+      <Recents/>
+    <style jsx global>{`
+      body {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: rgba(0,0,0,0.8);
+      }
+      @media (max-width: 767px){
+
         body {
-          font-size: 15px;
-          background-color: #ffffff;
+          font-size: 12px;
         }
-        em {
-          font-weight: bold;
+
+        .about > .container {
+          display: flex;
+          flex-flow: row;
+          padding: 0;
         }
-        .line {
-          width: 2rem;
-          border: 5px solid #A80606;
-          border-radius: 100px;
-          display: inline;
+
+        .about .container > img {
+          width: 50%;
+          height: 50%;
         }
-        .about h2 {
-          margin: 0;
+
+        .about .container > span {
+          text-align: center;
         }
-        button:hover {
-          cursor: pointer;
+
+        .about .container span p {
+          line-height: 15px;
         }
-      `}</style>
-    </React.Fragment>
+
+        about .container span button {
+          margin: 15px auto 0 auto;
+        }
+
+        .skills > .container {
+          grid-template-rows: auto;
+          grid-template-columns: unset;
+        }
+
+        .recent > section {
+          grid-template-rows: auto;
+          grid-template-columns: unset;
+        }
+      }
+    `}</style>
+    </Layout>
   )
 }

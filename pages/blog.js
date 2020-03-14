@@ -1,15 +1,15 @@
 import Head from 'next/head';
-
 import Navbar from '../components/Navbar';
+import Layout from '../components/Layout';
 
 const blog = () => {
     return (
-        <div>
+        <Layout>
             <Head>
                 <title>||Programmer Modern</title>
             </Head>
             <Navbar/>
-        </div>
+        </Layout>
     )
 }
 

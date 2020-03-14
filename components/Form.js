@@ -23,33 +23,25 @@ const Form = () => {
 
     return (
     <div className="interested">
-        <p>Are you interested with me, and want to collaborate on a project ?</p>
-        <form action="">
-            <p>CONTACT US</p>
-                <input ref={fullname} type="text" placeholder="Fullname" onKeyPress={handlePress}/>
-                <input ref={email} type="text" placeholder="Your Email" onKeyPress={handlePress}/>
-                <textarea ref={textarea} name="" id="" placeholder="Your Message" onKeyPress={handlePress}>
-    
-                </textarea>
-            <button onClick={handleClick}>SEND EMAIL</button>
+        <form>
+            <p>CONTACT US</p> 
+            <div className="form-group">
+                <input className="form-control" type="text" placeholder="Your Name"/>
+            </div>
+            <div className="form-group">
+                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+            </div>
+            <div className="form-group">
+            <textarea ref={textarea} name="" id="" placeholder="Your Message" onKeyPress={handlePress}/>
+            </div> 
+            <button type="submit" className="btn btn-primary">Submit</button>
         </form>
         <style jsx>{`
-            .interested {
-                margin-top: 4rem;
-                text-align: center;
-            }
-            .interested > p {
-                font-size: 1.5rem;
-                font-family: 'Alice',serif;
-                margin: 0 0 2rem 0;
-            }
-            form {
-                display: flex;
-                flex-flow: column;
+            form {  
                 width: 23rem;
                 margin: 0 auto;
                 border: 1px solid #A9A7A7;
-                padding: 2rem 5rem;
+                padding: 2rem 3rem;
                 border-radius: 20px;
                 font-family: 'Open Sans',serif;
             }
@@ -59,13 +51,6 @@ const Form = () => {
                 margin: 0;
                 text-align: left;
             }
-            input{
-                height: 2.5rem;
-            }
-
-            textarea {
-                min-height: 12rem;
-            }
             input , textarea{
                 border-radius: 20px;
                 border: 1px solid #A9A7A7;
@@ -73,10 +58,13 @@ const Form = () => {
                 outline: none;
             }
             textarea {
-                padding-top: 1rem; 
-                resize: vertical;    
+                min-height: 8rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem; 
+                width: 100%;
+                margin-bottom: 0 !important;
             }
-            form p , input , textarea , button {
+            input , textarea , button {
                 margin-bottom: 1rem;
             }
             button {
@@ -88,9 +76,10 @@ const Form = () => {
                 background-color: #e34646;
                 color: #fff;
                 font-size: 1rem;
+                margin: 0;
 
             }
         `}</style>
     </div>
 )}
-export default Form; 
+export default Form;   
