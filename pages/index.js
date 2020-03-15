@@ -78,14 +78,57 @@ export default function Index() {
           width: 100%;
         }
       }
-      @media only screen 
+      @media screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait){
-        .interested form {
-          width: 22rem !important;
-        }
+    body {
+      font-size: 12px;
+      width: auto;
+    }
+
+    .about > .container {
+      display: flex;
+      flex-flow: row;
+      padding: 0;
+    }
+
+    .about .container > img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .about .container > span {
+      text-align: center;
+    }
+
+    .about .container span p {
+      line-height: 15px;
+    }
+
+    about .container span button {
+      margin: 15px auto 0 auto;
+    }
+
+    .skills > .container {
+      grid-template-rows: auto;
+      grid-template-columns: unset;
+    }
+
+    .recent > section {
+      grid-template-rows: auto;
+      grid-template-columns: unset;
+    }
+
+    .interested form {
+      width: 22rem !important;
+    }
+
+    footer .container {
+      width: 100%;
+    }
+  }
       }
     `}</style>
     </Layout>
