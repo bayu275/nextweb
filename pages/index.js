@@ -70,6 +70,9 @@ export default function Index() {
         footer .container {
           width: 100%;
         }
+        footer .container-fluid .row{
+        display: block;
+        }
       }
     `}</style>
     </Layout>
