@@ -62,6 +62,12 @@ export default function Index() {
           grid-template-rows: auto;
           grid-template-columns: unset;
         }
+
+        .interested form {
+        }
+        footer .container {
+          width: 100%;
+        }
       }
     `}</style>
     </Layout>

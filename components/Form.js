@@ -38,7 +38,7 @@ const Form = () => {
         </form>
         <style jsx>{`
             form {  
-                width: 23rem;
+                width: 22rem;
                 margin: 0 auto;
                 border: 1px solid #A9A7A7;
                 padding: 2rem 3rem;
