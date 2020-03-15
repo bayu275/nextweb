@@ -24,7 +24,7 @@ const recent = (props) => {
             {/* {isStatus == false ? null :  <div className="title" onMouseEnter={updateUI} onMouseLeave={updateUI}><Link href="/portofolio"><a><p>Membuat Website Dinamis</p></a></Link></div>} */}
         <style jsx>{`
             .latar {
-                width: 22rem;
+                width: 20rem;
                 height: 13rem;
                 position: absolute;
                 top: 0;
@@ -41,7 +41,7 @@ const recent = (props) => {
                 }
                 to {
                     left: 0;
-                    width: 22rem;
+                    width: 20rem;
                 }
 
             }
@@ -60,7 +60,7 @@ const recent = (props) => {
                 float: left;
             }
             figure img {
-                width: 22rem;
+                width: 20rem;
                 height: 13rem;
                 border-radius: 10px;
                 display: block;

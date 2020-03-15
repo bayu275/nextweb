@@ -9,7 +9,7 @@ const footer = () => {
     return (
         <footer>
             <h2>Contact Me</h2>
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col">
                         <Form/>
@@ -42,7 +42,7 @@ const footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="subfooter">
+            <div className="subfooter container-fluid">
                 <div className="row">
                     <div className="col-md-12">
                         <p>&copy; Bayu Dirgantara 2020.</p>
@@ -78,6 +78,7 @@ const footer = () => {
             }
             .col {
                 margin-top: 1.5rem;
+                width: 100%;
             }
             .subfooter{
                 background-color: #fafafa;

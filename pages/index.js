@@ -28,6 +28,7 @@ export default function Index() {
 
         body {
           font-size: 12px;
+          width: auto;
         }
 
         .about > .container {
@@ -64,6 +65,7 @@ export default function Index() {
         }
 
         .interested form {
+          width: 100%;
         }
         footer .container {
           width: 100%;

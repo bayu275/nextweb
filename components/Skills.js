@@ -7,7 +7,7 @@ import bootimg from '../public/static/BOOTSTRAP.png'
 
 export default function Skills(){
     return (
-        <div className="skills">
+        <div className="skills container-fluid">
           <h2>SKILLS</h2>
           <div className="container">
             <figure>

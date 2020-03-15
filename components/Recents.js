@@ -5,7 +5,7 @@ export default function Recents(){
     const data = portofolio.portofolio;
     
     return (
-        <div className="recent">
+        <div className="recent container-fluid">
           <h2>RECENT WORKS</h2>
           <section >
             {data.map((item,index) => (
