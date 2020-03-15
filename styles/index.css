@@ -1,0 +1,28 @@
+p{
+    margin: 0;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    /* Jumbtron */
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+    /* about */
+    .about .col img {
+        width: 100%;
+        height: auto;
+    }
+    .about section button {
+        position: absolute;
+        top: 96%;
+        left: 104%;
+        z-index: 1000;
+    }
+    .about section {
+        font-size: 8px;
+    }
+}
