@@ -22,7 +22,7 @@ const Form = () => {
     }
 
     return (
-    <div className="interested">
+    <div className="interested container-fluid">
         <form>
             <p>CONTACT US</p> 
             <div className="form-group">
@@ -38,7 +38,7 @@ const Form = () => {
         </form>
         <style jsx>{`
             form {  
-                width: 20rem;
+                width: 22rem;
                 margin: 0 auto;
                 border: 1px solid #A9A7A7;
                 padding: 2rem 3rem;

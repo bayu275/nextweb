@@ -24,6 +24,9 @@ export default function Index() {
         -webkit-font-smoothing: antialiased;
         color: rgba(0,0,0,0.8);
       }
+      h2{
+        margin: 0;
+      }
       @media (max-width: 767px){
 
         body {
@@ -64,9 +67,6 @@ export default function Index() {
           grid-template-columns: unset;
         }
 
-        .interested form {
-          width: 100%;
-        }
         footer .container {
           width: 100%;
         }
