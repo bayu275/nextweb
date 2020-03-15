@@ -1,4 +1,4 @@
-p{
+p , h1 , h2 ,h3 ,h4, h5 {
     margin: 0;
 }
 
@@ -19,14 +19,12 @@ and (orientation: portrait) {
         width: 100%;
         height: auto;
     }
-    /* .about section button {
-        position: absolute;
-        top: 66%;
-        left: 107%;
-        z-index: 1000;
-    } */
     .about section {
-        font-size: 12px;
         text-align: left !important;
+    }
+    /* skills */
+    .skills .row {
+        margin-left: 0 !important;
+        display: block !important;
     }
 }

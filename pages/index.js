@@ -17,7 +17,7 @@ export default function Index() {
       <Jumbotron/>
       <Navbar/>
       <About/>
-      {/* <Skills/> */}
+      <Skills/>
       {/* <Recents/> */}
     {/* <style jsx global>{`
       body {
@@ -107,4 +107,4 @@ export default function Index() {
     `}</style> */}
     </Layout>
   )
-} 
+}  

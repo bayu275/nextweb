@@ -12,7 +12,7 @@ const about = () => {
         // }
     })
     return (
-        <div className="container about mt-4">
+        <div className="container about mt-5">
             <h3 className="text-center">About Me</h3>
             <div className="row mt-3">
                 <div className="col d-flex align-items-center justify-content-end">
