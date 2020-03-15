@@ -17,8 +17,8 @@ const recent = (props) => {
 
     return (
         <figure >
-            <img src={gambar} alt={gambar} onMouseEnter={updateUI} onMouseLeave={updateUI}/> 
-            <div ref={latar} className="latar" onMouseEnter={updateUI} onMouseLeave={updateUI}><img src={require('../public/static/click.svg')} alt={require('../public/static/click.svg')}/></div>  
+            <img id="recentimg" src={gambar} alt={gambar} onMouseEnter={updateUI} onMouseLeave={updateUI}/> 
+            <div id="recentimg" ref={latar} className="latar" onMouseEnter={updateUI} onMouseLeave={updateUI}><img src={require('../public/static/click.svg')} alt={require('../public/static/click.svg')}/></div>  
             {/* {isStatus == false ? null : <div className="latar"><img src={require('../public/static/click.svg')} alt={require('../public/static/click.svg')} onMouseEnter={updateUI} onMouseLeave={updateUI}/></div>}  */}
             {/* {isStatus == false ? null : <div className="show" onMouseEnter={updateUI} onMouseLeave={updateUI}><a href="https://moviesdirgantara.netlify.com" target="_blank" rel="noopener noreferrer"><p>Live Preview</p></a></div>}  */}
             {/* {isStatus == false ? null :  <div className="title" onMouseEnter={updateUI} onMouseLeave={updateUI}><Link href="/portofolio"><a><p>Membuat Website Dinamis</p></a></Link></div>} */}
@@ -37,17 +37,14 @@ const recent = (props) => {
             @keyframes detail {
                 from {
                     width: 0;
-                    left: 100%;
                 }
                 to {
-                    left: 0;
-                    width: 20rem;
+                    width: 100%;   
                 }
 
             }
 
-            .latar img {
-                align-self: center;
+            .latar img { 
                 width: 50px;
                 height: 50px;
             }
@@ -100,4 +97,4 @@ const recent = (props) => {
     )
 }
 
-export default recent; 
+export default recent;

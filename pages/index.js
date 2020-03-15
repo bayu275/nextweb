@@ -27,14 +27,21 @@ export default function Index() {
       h2{
         margin: 0;
       }
-      @media screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (orientation: portrait){
+      @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait){
 
         body {
-          font-size: 12px;
+          font-size: 10px;
           width: auto;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1rem;
         }
 
         .about > .container {
@@ -70,8 +77,17 @@ export default function Index() {
           grid-template-columns: unset;
         }
 
+        #recentimg{
+          width: 18rem;
+          height: 11rem;
+        }
+
+        .col {
+          padding: 0 !important;
+        }
+
         .interested form {
-          width: 20rem !important;
+          width: 18rem !important;
         }
 
         footer .container {
@@ -83,52 +99,9 @@ export default function Index() {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait){
-    body {
-      font-size: 12px;
-      width: auto;
-    }
-
-    .about > .container {
-      display: flex;
-      flex-flow: row;
-      padding: 0;
-    }
-
-    .about .container > img {
-      width: 50%;
-      height: 50%;
-    }
-
-    .about .container > span {
-      text-align: center;
-    }
-
-    .about .container span p {
-      line-height: 15px;
-    }
-
-    about .container span button {
-      margin: 15px auto 0 auto;
-    }
-
-    .skills > .container {
-      grid-template-rows: auto;
-      grid-template-columns: unset;
-    }
-
-    .recent > section {
-      grid-template-rows: auto;
-      grid-template-columns: unset;
-    }
-
-    .interested form {
-      width: 22rem !important;
-    }
-
-    footer .container {
-      width: 100%;
-    }
-  }
+        .interested form {
+          width: 22rem !important;
+        }
       }
     `}</style>
     </Layout>

@@ -43,50 +43,8 @@ const footer = () => {
                 </div>
             </div>
                 <div className="subfooter">
-                    <div className="col">
                         <p>&copy; Bayu Dirgantara 2020.</p>
-                </div>
             </div>
-            {/* <div className="container-fluid">
-                <div className="row">
-                    <div className="col">
-                        <Form/>
-                        <p>Social Media</p>
-                        <div className="d-flex flex-row justify-content-start">
-                            <div className="p-2">
-                                <a target="blank" href="https://twitter.com/_badirr">
-                                    <img src={twImg} alt={twImg} />
-                                </a>
-                            </div>
-                            <div className="p-2">
-                                <a target="blank" href="https://www.facebook.com/bayu275">
-                                    <img src={fbImg} alt={fbImg} />
-                                </a>
-                            </div>
-                            <div className="p-2">
-                                <a target="blank" href="https://www.instagram.com/baydirgan">
-                                    <img src={igImg} alt={igImg} />
-                                </a>
-                            </div>
-                            <div className="p-2">
-                                <a target="blank" href="https://github.com/bayu275">
-                                    <img src={gitImg} alt={gitImg} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <iframe title="address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127669.0495089475!2d101.37113474552513!3d0.513962478911432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ab80690ee7b1%3A0x94dde92c3823dbe4!2sPekanbaru%2C%20Kota%20Pekanbaru%2C%20Riau!5e0!3m2!1sid!2sid!4v1583780728791!5m2!1sid!2sid"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div className="subfooter container-fluid">
-                <div className="row">
-                    <div className="col-md-12">
-                        <p>&copy; Bayu Dirgantara 2020.</p>
-                    </div>
-                </div>
-            </div> */}
         <style jsx>{`
             footer {
                 margin-top: 3.5rem;
