@@ -21,12 +21,12 @@ and (orientation: portrait) {
     }
     .about section button {
         position: absolute;
-        top: 96%;
+        top: 66%;
         left: 107%;
         z-index: 1000;
     }
     .about section {
-        font-size: 8px;
+        font-size: 10px;
         text-align: left !important;
     }
 }
