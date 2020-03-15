@@ -8,18 +8,18 @@ import bootimg from '../public/static/BOOTSTRAP.png'
 export default function Skills(){
     return (
         <div className="container skills mt-5">
-            <h3 className="text-center">Skills</h3>
+            <h4 className="text-center">Skills</h4>
             <div className="row d-flex justify-content-center mt-3">
                 <div className="col-5">
                 <div className="btn d-flex justify-content-start">
                     <img src={htmlimg} alt={htmlimg}/>
-                    <h3>HTML 5</h3>
+                    <h4>Html 5</h4>
                 </div>
                 </div>
                 <div className="col-5">
                 <div className="btn d-flex justify-content-start">
                     <img src={cssimg} alt={cssimg}/>
-                    <h3>CSS 3</h3>
+                    <h4>Css 3</h4>
                 </div>
                 </div>
             </div>
@@ -27,13 +27,13 @@ export default function Skills(){
                 <div className="col-5">
                 <div className="btn d-flex justify-content-start">
                     <img src={jsimg} alt={jsimg}/>
-                    <h3>JAVASCRIPT</h3>
+                    <h4>Javascript</h4>
                 </div>
                 </div>
                 <div className="col-5">
                 <div className="btn d-flex justify-content-start">
                     <img src={bootimg} alt={jsimg}/>
-                    <h3>BOOTSTRAP</h3>
+                    <h4>Bootstrap</h4>
                 </div>
                 </div>
             </div>
@@ -41,13 +41,13 @@ export default function Skills(){
                 <div className="col-5">
                 <div className="btn d-flex justify-content-start">
                     <img src={reactimg} alt={reactimg}/>
-                    <h3>REACT</h3>
+                    <h4>React</h4>
                 </div>
                 </div>
                 <div className="col-5">
                 <div className="btn d-flex justify-content-start">
                     <img src={nodeimg} alt={nodeimg}/>
-                    <h3>NODEJS</h3>
+                    <h4>NodeJs</h4>
                 </div>
                 </div>
             </div>
