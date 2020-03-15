@@ -27,7 +27,10 @@ export default function Index() {
       h2{
         margin: 0;
       }
-      @media (max-width: 767px){
+      @media screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: portrait){
 
         body {
           font-size: 12px;
@@ -67,11 +70,21 @@ export default function Index() {
           grid-template-columns: unset;
         }
 
+        .interested form {
+          width: 20rem !important;
+        }
+
         footer .container {
           width: 100%;
         }
-        footer .container-fluid .row{
-        display: block;
+      }
+      @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait){
+        .interested form {
+          width: 22rem !important;
         }
       }
     `}</style>
