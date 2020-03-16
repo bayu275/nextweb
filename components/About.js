@@ -1,16 +1,7 @@
 import img from '../public/static/ABOUT.png';
 import imgBtn from '../public/static/paper-plane.svg';
-import myimage from '../public/static/SAYA.jpg'
-import { useRef, useEffect, useState } from 'react';
 
 const about = () => {
-    const refimg = useRef('');
-    useEffect(()=>{
-        let media = window.matchMedia(`(max-width: 736px)`).matches;
-        // if(media == true){
-        //     refimg.current.setAttribute('src',myimage);
-        // }
-    })
     return (
         <div className="container about mt-5">
             <h3 className="text-center">About Me</h3>
@@ -25,7 +16,7 @@ const about = () => {
                </section>
                 </div>
                 <div className="col">
-                <img ref={refimg} src={img} alt={img}/>
+                <img src={img} alt={img}/>
                 </div>
             </div>
             <style jsx>{`

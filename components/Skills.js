@@ -8,7 +8,7 @@ import bootimg from '../public/static/BOOTSTRAP.png'
 export default function Skills(){
     return (
         <div className="container skills mt-5">
-            <h4 className="text-center">Skills</h4>
+            <h3 className="text-center">Skills</h3>
             <div className="row d-flex justify-content-center mt-3">
                 <div className="col-5">
                 <div className="btn d-flex justify-content-start">
@@ -52,6 +52,11 @@ export default function Skills(){
                 </div>
             </div>
         <style jsx>{`
+            .container {
+                border-style: dotted;
+                padding: 10px;
+                border-radius: 10px;
+            }
             img {
                 padding-right: 20px;
             }

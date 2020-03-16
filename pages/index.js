@@ -18,7 +18,7 @@ export default function Index() {
       <Navbar/>
       <About/>
       <Skills/>
-      {/* <Recents/> */}
+      <Recents/>
     {/* <style jsx global>{`
       body {
         text-rendering: optimizeLegibility;
