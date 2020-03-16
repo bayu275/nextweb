@@ -6,7 +6,7 @@ export default function Jumbotron(){
         <div className="jumbotron jumbotron-fluid">
             <div className="container text-center">
             <img src={myimage} alt={myimage}/>
-                <h1 className="display-4">Bayu Dirgantara</h1>
+                <h1>Bayu Dirgantara</h1>
                 <p>FullStack Web Developer</p>
                 <p>bayuusetiawan86@gmail.com</p>
             </div>
@@ -15,6 +15,9 @@ export default function Jumbotron(){
                     background: url(${jumbotron});
                     color: #fff;
                     margin-bottom: 0;
+                }
+                h1{
+                    margin-bottom: 10px;
                 }
                 img {
                     width: 8rem;

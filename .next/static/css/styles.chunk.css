@@ -42,6 +42,13 @@ and (orientation: portrait) {
         border-bottom: groove !important;
         border-top-left-radius: unset !important;
     }
+    /* Gallery */
+    .recents .card-group{
+        display: block !important;
+    }
+    .recents .card-group .card > img , .recents .card-group .card .pop {
+        height: 10rem;
+    }
 }
 
 /*# sourceMappingURL=styles.chunk.css.map*/

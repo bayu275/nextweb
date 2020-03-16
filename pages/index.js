@@ -13,6 +13,7 @@ export default function Index() {
     <Layout>
       <Head>
         <title>Bayu Dirgantara</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
       </Head>
       <Jumbotron/>
       <Navbar/>

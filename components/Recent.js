@@ -3,16 +3,39 @@ import Link from 'next/link';
 
 const recent = (props) => {
     const { gambar } = props.data;
+    const [isStatus,setIsStatus] = useState(false);
+
+    function updateUI(e){
+          e.preventDefault();
+          if(e.type === 'mouseenter'){
+              setIsStatus(true)
+          }else if(e.type === 'mouseleave'){
+              setIsStatus(false)
+          }
+      }
+
     return (
         <div className="card">
-          <img className="card-img-top" src={gambar} alt={gambar}/>
+          <img className="card-img-top" src={gambar} alt={gambar} onMouseEnter={updateUI} onMouseLeave={updateUI}/>
+          {isStatus == false ? null : <div className="pop d-flex align-items-center justify-content-center animated fadeIn" onMouseEnter={updateUI} onMouseLeave={updateUI}><img  src={require('../public/static/click.svg')} alt={require('../public/static/click.svg')}/></div>}
         <style jsx>{`
             .card {
             width: 100%;
-            border-radius: 20px !important;
+            border-radius: 10px !important;
+            }
+            .card div {
+                background-color: rgba(0, 0, 0, .8);
+                height: 15rem;
+                border-radius: 10px !important;
+                position: absolute;
+                width: 100%;
+            }
+            .card div > img {
+                width: 40px;
+                height: 40px;
             }
             img {
-            border-radius: 20px !important;
+            border-radius: 10px !important;
             height: 15rem;
             }
         `}</style>

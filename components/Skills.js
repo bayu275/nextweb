@@ -54,7 +54,7 @@ export default function Skills(){
         <style jsx>{`
             .container {
                 border-style: dotted;
-                padding: 10px;
+                padding: 20px;
                 border-radius: 10px;
             }
             img {
