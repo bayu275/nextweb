@@ -47,6 +47,6 @@ and (orientation: portrait) {
         display: block !important;
     }
     .recents .card-group .card > img , .recents .card-group .card .pop {
-        height: 10rem;
+        height: 12rem;
     }
 }
